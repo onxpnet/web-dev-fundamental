@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Example</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Type Selector */
+        p {
+            font-size: 16px;
+            color: blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #unique {
+            background-color: yellow;
+        }
+
+        /* Descendant Selector */
+        div p {
+            font-style: italic;
+        }
+
+        /* Child Selector */
+        ul > li {
+            list-style-type: square;
+        }
+
+        /* Adjacent Sibling Selector */
+        h1 + p {
+            margin-top: 20px;
+        }
+
+        /* General Sibling Selector */
+        h1 ~ p {
+            color: green;
+        }
+
+        /* Attribute Selector */
+        a[href] {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="highlight">Welcome to CSS Selectors</h1>
+    <p>This is a paragraph demonstrating a class selector.</p>
+    <p id="unique">This paragraph demonstrates an ID selector.</p>
+    <div>
+        <p>This paragraph is inside a div, demonstrating a descendant selector.</p>
+    </div>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+    <h1>Another Heading</h1>
+    <p>This paragraph demonstrates an adjacent sibling selector.</p>
+    <p>This paragraph demonstrates a general sibling selector.</p>
+    <a href="https://example.com">This link demonstrates an attribute selector.</a>
+</body>
+</html>

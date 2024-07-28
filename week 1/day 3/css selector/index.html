@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Example</title>
+    <style>
+        /* Pseudo-class selectors */
+        a:hover {
+            color: red;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        input:focus {
+            border-color: blue;
+        }
+
+        /* Pseudo-element selectors */
+        p::first-line {
+            font-weight: bold;
+        }
+
+        p::first-letter {
+            font-size: 200%;
+        }
+
+        /* Combined pseudo-classes and pseudo-elements */
+        p:hover::first-letter {
+            color: green;
+        }
+
+        /* Pseudo-class with attribute selector */
+        input[type="text"]:focus {
+            background-color: yellow;
+        }
+
+        /* Pseudo-class with class selector */
+        .highlight:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Hover over me</a>
+    <a href="#">Visit me</a>
+    <input type="text" placeholder="Focus on me">
+    <p>First line and first letter styling example.</p>
+    <p class="highlight">Hover over this paragraph.</p>
+</body>
+</html>
