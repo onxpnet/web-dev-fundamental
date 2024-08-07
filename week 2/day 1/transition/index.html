@@ -55,34 +55,33 @@
 
         button{
             color: white;
-            background-color: var(--primary);
+            background-color: var(--secondary);
             border: none;
             cursor: pointer;
             padding: 10px;
             border-radius: 10px;
             width: 100px;
 
-            /* transition-property: background-color;
-            transition-duration: 0s;
+            /* transition-property: transform;
+            transition-duration: 0.5s;
             transition-timing-function: ease-in-out;
-            transition-delay: 2s; */
+            transition-delay: 0s; */
 
             /* or use shorthand property */
 
             transition: 
-                background-color 0.3s ease 0.2s,
-                width 3s ease-in-out 
-            ;
+            transform 0.5s ease-in-out 0.2s,
+            background-color 0.5s ease-in-out;
         }
 
         button:hover{
-            background-color: red;
-            width: 120px;
+            transform: rotateY(360deg);
+            background-color: var(--primary);
         }
     </style>
 </head>
 <body>
-    <button type="button">
+    <button type="button" class="">
         <span>Click Me</span>
     </button>
 </body>

@@ -4,12 +4,12 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-     'header header header'
-     'aside main main'
-     'footer footer footer';
+    'header header header sidemenu'
+    'main main content sidemenu'
+    'footer footer footer sidemenu';
     padding: 10px;
     height: 400px;
     border: 1px dashed black;
@@ -21,17 +21,25 @@ body{
 }
 
 .box-1{
-    grid-area: header;
+    grid-area: footer;
+    background-color: greenyellow;
 }
 
 .box-2{
-    grid-area: main;
+    grid-area: sidemenu;
+    background-color: green;
 }
 
 .box-3{
-    grid-area: footer;
+    grid-area: content;
+    background-color: blue;
 }
 
 .box-4{
-    grid-area: aside;
+    grid-area: main;
+    background-color: red;
+}
+
+.box-5{
+    grid-area: header;
 }

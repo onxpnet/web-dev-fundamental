@@ -1,0 +1,79 @@
+:root{
+    --color-primary : rgb(226, 218, 218);
+}
+
+body{
+    background-color: var(--color-primary);
+}
+
+img {
+    object-fit: cover;
+    width: 300px;
+    height: 50px;
+}
+
+#text-utama {
+    font-weight: bold;
+}
+
+.biru {
+    color: blue;
+}
+
+.custom-text {
+    color: purple;
+}
+
+.merah {
+    color: red;
+}
+
+.kuning {
+    color: yellow;
+}
+
+.hijau {
+    color: #50a832;
+}
+
+[type="text"] {
+    background-color: red;
+}
+
+.custom-text.merah {
+    color: black;
+}
+
+
+
+.custom-button{
+    background-color: #50a832;
+    color: var(--color-primary);
+    border: 0;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 20px;
+}
+
+.custom-button2{
+    background-color: #50a832;
+    color: var(--color-primary);
+    border: 0;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+
+.custom-button:hover{
+    background-color: #2b5e1a;
+}
+
+.link {
+    color: grey;
+    text-decoration: none;
+}
+
+.link:visited{
+    color: wheat;
+}

@@ -32,39 +32,39 @@
     }
 
     /* Absolute units */
-    .absolute-px {
+    .px {
         width: 150px; 
         height: 50px; 
         background-color: #3498db; 
     }
 
     /* Relative units */
-    .absolute-em {
+    .em {
+        font-size: 16px;
         width: 15em; 
         height: 5em; 
         background-color: #e74c3c; 
     }
 
-    .absolute-rem {
+    .rem {
         width: 10rem; 
         height: 3rem; 
         background-color: #f39c12; 
     }
 
     
-    .relative-percent {
-        width: 50%; 
-        height: 50%; 
+    .percent {
+        width: 50%;
         background-color: #2ecc71;
     }
 
-    .relative-vw {
+    .vw {
         width: 20vw; 
         height: 10vw;
         background-color: #9b59b6;
     }
 
-    .relative-vh {
+    .vh {
         width: 20vh;
         height: 10vh;
         background-color: #e67e22;
@@ -74,12 +74,12 @@
 <body>
     <h1>CSS Units: Absolute and Relative in Lists</h1>
     <ul class="unit-list">
-        <li class="list-item absolute-px">Absolute: 50px</li>
-        <li class="list-item absolute-em">Absolute: 1em</li>
-        <li class="list-item absolute-rem">Absolute: 1rem</li>
-        <li class="list-item relative-percent">Relative: 50%</li>
-        <li class="list-item relative-vw">Relative: 20vw</li>
-        <li class="list-item relative-vh">Relative: 10vh</li>
+        <li class="list-item px">Absolute: 50px</li>
+        <li class="list-item em">Relative: 1em</li>
+        <li class="list-item rem">Relative: 1rem</li>
+        <li class="list-item percent">Relative: 50%</li>
+        <li class="list-item vw">Relative: 20vw</li>
+        <li class="list-item vh">Relative: 10vh</li>
     </ul>
 </body>
 </html>
