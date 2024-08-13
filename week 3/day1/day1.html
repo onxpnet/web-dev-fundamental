@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>h1</h1>
+    <h2>hello world</h2>
+    
+    <script>
+        
+        
+
+        // FUNCTION
+        function setDatauser(nama, tahunKelahiran){
+            let person = {
+                nama: nama,
+                umur: 2024 - tahunKelahiran,
+                vaksinCovid: true,
+                statusPendaftaran: {
+                    pendaftaran1 : true,
+                    pendaftaran2 : false,
+                    pendaftaran3 : "PENDING",
+                    status: [
+                        {
+                            type: "A",
+                            nama: "astra zenecca"
+                        },
+                        {
+                            type: "B",
+                            nama: "astra zenecca"
+                        },
+                        {
+                            type: "C",
+                            nama: "astra zenecca"
+                        }
+                    ]
+                },
+                sapaUser: function (namaKucing) {
+                        return `Hai! saya ${this.nama} kucing saya bernama ${namaKucing}`
+                    },
+                tahunKelahiran: function (params) {
+                        return tahunKelahiran
+                    }
+            }
+            return person
+        }
+
+        
+        const dataUser = setDatauser("rafly", 1996)
+
+        // ARRAY
+
+        function deleteAnimals(array) {
+            let animalArray = array
+
+            return animalArray.filter((value) => Array.from(value)[0] == "s")
+        }
+
+
+        const animals = ["kucing", "anjing", "sapi"]
+
+        animals.push("singa")
+
+        // console.log("data : ", deleteAnimals(animals))
+
+        // OBJECT
+        // console.log(dataUser.sapaUser("hari"))
+        // console.log(dataUser.tahunKelahiran())
+
+
+        // JSON
+        const jsonString = '{"name":"John", "age":30, "car":null}'
+        console.log(typeof jsonString)
+
+        const jsonObj = JSON.parse(jsonString)
+        console.log(jsonObj.age)
+        
+
+        const personString = JSON.stringify(dataUser)
+        console.log(personString)
+    </script>
+</body>
+</html>
